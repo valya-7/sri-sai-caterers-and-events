@@ -1,0 +1,940 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sri Sai Caterers & Events | 25+ Years Legacy in Hasthinapuram, Hyderabad</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;800;900&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        maroon: {
+                            800: '#58111A',
+                            900: '#3D0A11',
+                            950: '#230509',
+                        },
+                        gold: {
+                            300: '#FFE29F',
+                            400: '#F3C06B',
+                            500: '#D4AF37',
+                            600: '#AA820A',
+                            700: '#856404'
+                        },
+                        cream: '#FAF6F0'
+                    },
+                    fontFamily: {
+                        serif: ['Cinzel', 'serif'],
+                        sans: ['Plus Jakarta Sans', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .glass-card {
+            background: rgba(255, 255, 255, 0.88);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(212, 175, 55, 0.25);
+        }
+        .glass-card-dark {
+            background: rgba(35, 5, 9, 0.88);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(212, 175, 55, 0.35);
+        }
+        .gold-gradient-text {
+            background: linear-gradient(135deg, #FFF0C7 0%, #F3C06B 30%, #D4AF37 60%, #AA820A 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .gold-glow {
+            text-shadow: 0 0 20px rgba(212, 175, 55, 0.4), 0 0 40px rgba(212, 175, 55, 0.2);
+        }
+        .gold-bg-gradient {
+            background: linear-gradient(135deg, #FFE29F 0%, #D4AF37 50%, #B88E28 100%);
+        }
+        .maroon-gradient {
+            background: linear-gradient(135deg, #3D0A11 0%, #58111A 50%, #230509 100%);
+        }
+        .gold-border-glow {
+            box-shadow: 0 0 25px -5px rgba(212, 175, 55, 0.3);
+        }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-800 font-sans antialiased overflow-x-hidden">
+
+    <!-- Navigation Header -->
+    <header class="fixed top-0 left-0 right-0 z-50 transition-all duration-300 bg-maroon-950/95 backdrop-blur-md border-b-2 border-gold-500/40 shadow-2xl" id="navbar">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-24">
+                
+                <!-- Prominently Highlighted Brand Logo & Name -->
+                <a href="#home" class="flex items-center gap-3.5 group py-1">
+                    <div class="w-14 h-14 rounded-2xl border-2 border-gold-400 flex items-center justify-center bg-gradient-to-br from-maroon-800 to-maroon-950 shadow-xl shadow-gold-500/20 group-hover:scale-105 transition duration-300 relative overflow-hidden">
+                        <div class="absolute inset-0 bg-gold-500/10 opacity-0 group-hover:opacity-100 transition"></div>
+                        <i class="fa-solid fa-crown text-gold-400 text-2xl group-hover:rotate-12 transition transform"></i>
+                    </div>
+                    <div>
+                        <div class="flex items-center gap-2">
+                            <span class="font-serif text-2xl sm:text-3xl font-black tracking-wider text-white leading-none gold-glow">
+                                SRI SAI
+                            </span>
+                            <span class="bg-gold-500 text-maroon-950 text-[10px] sm:text-xs font-black px-2 py-0.5 rounded-full uppercase tracking-wide shadow-md">
+                                25+ Years
+                            </span>
+                        </div>
+                        <span class="text-xs sm:text-sm tracking-[0.25em] gold-gradient-text uppercase font-bold block mt-1">
+                            Caterers & Events
+                        </span>
+                    </div>
+                </a>
+
+                <!-- Desktop Navigation Links -->
+                <nav class="hidden xl:flex items-center space-x-7 text-sm font-semibold text-slate-200">
+                    <a href="#home" class="hover:text-gold-400 transition-colors py-1 border-b-2 border-transparent hover:border-gold-400">Home</a>
+                    <a href="#about" class="hover:text-gold-400 transition-colors py-1 border-b-2 border-transparent hover:border-gold-400">25 Year Heritage</a>
+                    <a href="#services" class="hover:text-gold-400 transition-colors py-1 border-b-2 border-transparent hover:border-gold-400">Services</a>
+                    <a href="#menus" class="hover:text-gold-400 transition-colors py-1 border-b-2 border-transparent hover:border-gold-400">Menus</a>
+                    <a href="#calculator" class="hover:text-gold-400 transition-colors py-1 border-b-2 border-transparent hover:border-gold-400">Cost Estimator</a>
+                    <a href="#contact" class="hover:text-gold-400 transition-colors py-1 border-b-2 border-transparent hover:border-gold-400">Contact Us</a>
+                </nav>
+
+                <!-- Header Actions -->
+                <div class="hidden sm:flex items-center space-x-3">
+                    <a href="https://wa.me/919876543210?text=Hello%20Sri%20Sai%20Caterers,%20I%20would%20like%20to%20inquire%20about%20catering%20services." target="_blank" class="flex items-center gap-2 text-green-400 hover:text-green-300 transition text-xs font-bold bg-green-950/70 border border-green-500/40 px-3 py-2.5 rounded-xl shadow-lg">
+                        <i class="fa-brands fa-whatsapp text-base"></i>
+                        <span>WhatsApp S. Ravinder</span>
+                    </a>
+                    <a href="#calculator" class="gold-bg-gradient hover:opacity-95 text-maroon-950 px-5 py-2.5 rounded-xl text-xs sm:text-sm font-extrabold transition shadow-lg shadow-gold-500/25 hover:shadow-gold-500/40 transform hover:-translate-y-0.5">
+                        Book Event
+                    </a>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <button id="mobile-menu-btn" class="xl:hidden text-slate-200 hover:text-gold-400 p-2 rounded-lg focus:outline-none" aria-label="Toggle Navigation">
+                    <i class="fa-solid fa-bars text-2xl" id="menu-icon"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Drawer Menu -->
+        <div id="mobile-menu" class="hidden xl:hidden bg-maroon-950 border-b-2 border-gold-500/30 px-6 pt-3 pb-6 space-y-3">
+            <a href="#home" class="mobile-nav-link block text-slate-200 hover:text-gold-400 py-2 text-base font-semibold">Home</a>
+            <a href="#about" class="mobile-nav-link block text-slate-200 hover:text-gold-400 py-2 text-base font-semibold">25 Year Heritage</a>
+            <a href="#services" class="mobile-nav-link block text-slate-200 hover:text-gold-400 py-2 text-base font-semibold">Services</a>
+            <a href="#menus" class="mobile-nav-link block text-slate-200 hover:text-gold-400 py-2 text-base font-semibold">Our Menus</a>
+            <a href="#calculator" class="mobile-nav-link block text-slate-200 hover:text-gold-400 py-2 text-base font-semibold">Cost Estimator</a>
+            <a href="#contact" class="mobile-nav-link block text-slate-200 hover:text-gold-400 py-2 text-base font-semibold">Contact Us</a>
+            <div class="pt-2 flex flex-col gap-3">
+                <a href="#calculator" class="gold-bg-gradient text-maroon-950 text-center py-3 rounded-xl font-extrabold text-sm shadow-md">
+                    Book Catering (20 - 10,000+ Guests)
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="relative min-h-screen flex items-center pt-28 pb-20 maroon-gradient text-white overflow-hidden">
+        <!-- Background Overlay Image -->
+        <div class="absolute inset-0 opacity-20 bg-cover bg-center mix-blend-overlay" style="background-image: url('https://images.unsplash.com/photo-1555244162-803834f70033?q=80&w=1600&auto=format&fit=crop');"></div>
+        <div class="absolute inset-0 bg-gradient-to-t from-maroon-950 via-maroon-950/60 to-maroon-950/90"></div>
+        
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 w-full">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                
+                <!-- Left Column: High-Impact Brand Showcase -->
+                <div class="lg:col-span-7 text-center lg:text-left space-y-6">
+                    
+                    <!-- 25 Years Anniversary Celebration Badge -->
+                    <div class="inline-flex items-center gap-3 px-4 py-2 rounded-full bg-gradient-to-r from-gold-500/20 via-gold-500/30 to-gold-500/10 border-2 border-gold-500/60 text-gold-300 text-xs sm:text-sm font-bold shadow-lg shadow-gold-500/10">
+                        <i class="fa-solid fa-award text-gold-400 text-base"></i>
+                        <span>CELEBRATING 25+ YEARS OF CULINARY EXCELLENCE IN HYDERABAD</span>
+                    </div>
+
+                    <!-- Prominent Main Brand Title -->
+                    <div class="space-y-2">
+                        <span class="text-slate-300 font-medium tracking-widest text-xs sm:text-sm uppercase block">Hasthinapuram's Premier Food & Event Partners</span>
+                        <h1 class="font-serif text-4xl sm:text-6xl xl:text-7xl font-black tracking-tight text-white leading-none">
+                            <span class="gold-gradient-text gold-glow block mb-2">SRI SAI</span>
+                            <span class="text-3xl sm:text-5xl xl:text-6xl font-extrabold text-white block">CATERERS & EVENTS</span>
+                        </h1>
+                    </div>
+
+                    <!-- Subheading & Founder Callout -->
+                    <p class="text-base sm:text-lg text-slate-200 max-w-2xl mx-auto lg:mx-0 font-light leading-relaxed">
+                        Founded by <strong class="text-gold-400 font-bold border-b border-gold-400/40">S. Ravinder</strong>, we bring <strong class="text-white font-semibold">25 Years of Culinary Mastery</strong> to marriages, corporate galas, and celebrations for <strong class="text-gold-300 font-semibold">20 to 10,000+ Guests</strong> across Hyderabad.
+                    </p>
+
+                    <!-- Trust Highlights Grid -->
+                    <div class="grid grid-cols-3 gap-3 max-w-lg mx-auto lg:mx-0 pt-2 text-center">
+                        <div class="p-3.5 rounded-xl bg-white/5 border border-gold-500/20 backdrop-blur-sm">
+                            <i class="fa-solid fa-ribbon text-gold-400 text-2xl mb-1 block"></i>
+                            <div class="text-xs font-bold text-white">25+ Years Legacy</div>
+                            <div class="text-[10px] text-slate-400">Est. 1999</div>
+                        </div>
+                        <div class="p-3.5 rounded-xl bg-white/5 border border-gold-500/20 backdrop-blur-sm">
+                            <i class="fa-solid fa-utensils text-green-400 text-2xl mb-1 block"></i>
+                            <div class="text-xs font-bold text-white">Pure Veg & Non-Veg</div>
+                            <div class="text-[10px] text-slate-400">Authentic Taste</div>
+                        </div>
+                        <div class="p-3.5 rounded-xl bg-white/5 border border-gold-500/20 backdrop-blur-sm">
+                            <i class="fa-solid fa-users text-gold-400 text-2xl mb-1 block"></i>
+                            <div class="text-xs font-bold text-white">20 to 10,000+</div>
+                            <div class="text-[10px] text-slate-400">Guest Capacity</div>
+                        </div>
+                    </div>
+
+                    <!-- CTAs -->
+                    <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 pt-4">
+                        <a href="#calculator" class="w-full sm:w-auto gold-bg-gradient text-maroon-950 px-8 py-4 rounded-xl text-base font-black shadow-xl shadow-gold-500/25 hover:shadow-gold-500/40 transition transform hover:-translate-y-0.5 flex items-center justify-center gap-2.5">
+                            <i class="fa-solid fa-calculator text-lg"></i>
+                            <span>Instant Event Cost Calculator</span>
+                        </a>
+                        <a href="tel:+919876543210" class="w-full sm:w-auto bg-white/10 hover:bg-white/20 text-white border border-white/30 px-8 py-4 rounded-xl text-base font-bold transition flex items-center justify-center gap-2.5">
+                            <i class="fa-solid fa-phone text-gold-400"></i>
+                            <span>Call S. Ravinder</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Right Column: Visual Showcase Frame -->
+                <div class="lg:col-span-5 relative">
+                    <div class="relative rounded-3xl overflow-hidden border-2 border-gold-500/40 shadow-2xl gold-border-glow group">
+                        <img src="https://images.unsplash.com/photo-1544025162-d76694265947?q=80&w=1000&auto=format&fit=crop" 
+                             alt="Sri Sai Caterers Grand Banquet Setup" 
+                             class="w-full h-[460px] object-cover group-hover:scale-105 transition duration-700"
+                             onerror="this.src='https://placehold.co/600x800/3D0A11/D4AF37?text=Sri+Sai+Caterers+Hyderabad'">
+                        <div class="absolute inset-0 bg-gradient-to-t from-maroon-950 via-maroon-950/30 to-transparent"></div>
+                        
+                        <!-- Floating 25 Year Badge in Image -->
+                        <div class="absolute top-5 right-5 bg-maroon-900/90 border-2 border-gold-400 text-white p-3 rounded-2xl backdrop-blur-md shadow-xl text-center">
+                            <span class="font-serif text-2xl font-black text-gold-400 block leading-none">25</span>
+                            <span class="text-[10px] font-bold tracking-widest text-slate-200 uppercase block mt-0.5">Years Legacy</span>
+                        </div>
+
+                        <div class="absolute bottom-6 left-6 right-6 p-4 rounded-2xl glass-card-dark border border-gold-500/40">
+                            <div class="flex items-center gap-3.5">
+                                <div class="w-11 h-11 rounded-xl bg-gold-500/20 border border-gold-400 flex items-center justify-center text-gold-400 flex-shrink-0 text-xl">
+                                    <i class="fa-solid fa-bowl-food"></i>
+                                </div>
+                                <div>
+                                    <h4 class="text-white font-bold text-sm">Authentic Hyderabadi Dum Biryani & Feasts</h4>
+                                    <p class="text-xs text-slate-300 mt-0.5">Crafted with 25 years of perfected recipes</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- 25 Years Milestone Stats Banner -->
+    <section class="bg-maroon-900 border-y-2 border-gold-500/40 text-white py-10 relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+                <div class="p-3 border-r border-gold-500/20 last:border-none">
+                    <div class="font-serif text-3xl sm:text-5xl font-extrabold text-gold-400 gold-glow">25+</div>
+                    <div class="text-xs sm:text-sm text-slate-200 mt-1 uppercase tracking-widest font-bold">Years of Trust</div>
+                </div>
+                <div class="p-3 border-r border-gold-500/20 last:border-none">
+                    <div class="font-serif text-3xl sm:text-5xl font-extrabold text-gold-400 gold-glow">3,500+</div>
+                    <div class="text-xs sm:text-sm text-slate-200 mt-1 uppercase tracking-widest font-bold">Successful Events</div>
+                </div>
+                <div class="p-3 border-r border-gold-500/20 last:border-none">
+                    <div class="font-serif text-3xl sm:text-5xl font-extrabold text-gold-400 gold-glow">10,000+</div>
+                    <div class="text-xs sm:text-sm text-slate-200 mt-1 uppercase tracking-widest font-bold">Max Catering Capacity</div>
+                </div>
+                <div class="p-3">
+                    <div class="font-serif text-3xl sm:text-5xl font-extrabold text-gold-400 gold-glow">100%</div>
+                    <div class="text-xs sm:text-sm text-slate-200 mt-1 uppercase tracking-widest font-bold">Fresh & Hygienic</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Us & Founder Section -->
+    <section id="about" class="py-20 bg-cream relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                
+                <!-- Founder Picture Frame -->
+                <div class="lg:col-span-5 relative">
+                    <div class="relative z-10 rounded-3xl overflow-hidden border-4 border-white shadow-2xl">
+                        <img src="https://images.unsplash.com/photo-1577219491135-ce391730fb2c?q=80&w=800&auto=format&fit=crop" 
+                             alt="Founder S. Ravinder Sri Sai Caterers" 
+                             class="w-full h-auto object-cover"
+                             onerror="this.src='https://placehold.co/600x700/58111A/ffffff?text=S.+Ravinder+-+Founder'">
+                    </div>
+                    
+                    <!-- Founder Floating Card -->
+                    <div class="absolute -bottom-8 -right-4 sm:-right-8 w-3/4 bg-maroon-950 text-white p-6 rounded-2xl shadow-2xl border-2 border-gold-500/40 z-20">
+                        <div class="flex items-center gap-3">
+                            <div class="w-10 h-10 rounded-full bg-gold-500 flex items-center justify-center text-maroon-950 font-bold text-lg">
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                            <div>
+                                <p class="font-serif font-black text-xl text-gold-400">S. Ravinder</p>
+                                <p class="text-xs text-slate-300 uppercase tracking-widest font-semibold">Founder & Master Caterer</p>
+                            </div>
+                        </div>
+                        <p class="text-xs text-slate-300 mt-3 italic leading-relaxed border-t border-gold-500/20 pt-2">
+                            "Since 25 years, our devotion has been to treat every event like our own family celebration with authentic tastes and warmth."
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Right Narrative Content -->
+                <div class="lg:col-span-7 space-y-6">
+                    <div>
+                        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-maroon-900/10 text-maroon-900 text-xs font-bold uppercase tracking-wider mb-2">
+                            <i class="fa-solid fa-clock-rotate-left text-gold-600"></i>
+                            <span>25 Years Legacy in Hasthinapuram</span>
+                        </div>
+                        <h2 class="font-serif text-3xl sm:text-5xl font-black text-maroon-950">
+                            A Quarter-Century of Culinary Greatness in Hyderabad
+                        </h2>
+                    </div>
+
+                    <p class="text-slate-700 leading-relaxed text-base sm:text-lg">
+                        Headquartered in <strong class="text-maroon-900 font-bold">Hasthinapuram, Hyderabad</strong>, <strong class="text-maroon-900 font-bold">Sri Sai Caterers & Events</strong> was established over <strong class="text-gold-600 font-bold">25 years ago</strong> under the visionary guidance of founder <strong class="text-maroon-900 font-bold">S. Ravinder</strong>.
+                    </p>
+
+                    <p class="text-slate-700 leading-relaxed text-base">
+                        What began as a passion for authentic South and North Indian cuisines has evolved into one of Hyderabad's most dependable catering services. Whether serving an intimate private dinner for <strong class="text-maroon-950 font-semibold">20 guests</strong> or a grand wedding of <strong class="text-maroon-950 font-semibold">10,000+ members</strong>, we guarantee perfection in every plate.
+                    </p>
+
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-2">
+                        <div class="flex items-start gap-3.5 p-4 bg-white rounded-2xl shadow-md border border-gold-500/20">
+                            <i class="fa-solid fa-certificate text-gold-600 text-2xl mt-1"></i>
+                            <div>
+                                <h4 class="font-bold text-slate-900 text-base">25 Years Quality Pledge</h4>
+                                <p class="text-xs text-slate-600 mt-0.5">Strict hygiene, pure ghee preparations & authentic spice blends.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-3.5 p-4 bg-white rounded-2xl shadow-md border border-gold-500/20">
+                            <i class="fa-solid fa-heart-handshake text-gold-600 text-2xl mt-1"></i>
+                            <div>
+                                <h4 class="font-bold text-slate-900 text-base">Full Event Execution</h4>
+                                <p class="text-xs text-slate-600 mt-0.5">Buffet setups, live stalls, royal serving crew & hospitality management.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <span class="text-gold-600 font-bold uppercase text-xs sm:text-sm tracking-widest">Complete Event Solutions</span>
+                <h2 class="font-serif text-3xl sm:text-5xl font-black text-maroon-950 mt-1">Services for Every Celebration</h2>
+                <p class="text-slate-600 mt-3 text-base">Backed by 25 years of experience in catering marriages, corporate events, and traditional ceremonies.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                
+                <!-- Service 1 -->
+                <div class="bg-slate-50 rounded-2xl overflow-hidden border border-slate-200 shadow-md hover:shadow-2xl transition duration-300 group">
+                    <div class="h-52 overflow-hidden relative">
+                        <img src="https://images.unsplash.com/photo-1519741497674-611481863552?q=80&w=800&auto=format&fit=crop" 
+                             alt="Grand Weddings Sri Sai Caterers" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+                        <div class="absolute top-4 right-4 bg-maroon-900 text-gold-400 font-bold text-xs px-3 py-1.5 rounded-full border border-gold-500/40 shadow-md">
+                            20 to 10,000+ Guests
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="font-serif text-xl font-extrabold text-maroon-900 group-hover:text-gold-600 transition">Grand Weddings & Receptions</h3>
+                        <p class="text-slate-600 text-sm mt-2 leading-relaxed">Royal buffet setups, live welcome drink stations, traditional banana leaf feasts, and opulent dessert counters.</p>
+                    </div>
+                </div>
+
+                <!-- Service 2 -->
+                <div class="bg-slate-50 rounded-2xl overflow-hidden border border-slate-200 shadow-md hover:shadow-2xl transition duration-300 group">
+                    <div class="h-52 overflow-hidden relative">
+                        <img src="https://images.unsplash.com/photo-1511795409834-ef04bbd61622?q=80&w=800&auto=format&fit=crop" 
+                             alt="Corporate Catering" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+                        <div class="absolute top-4 right-4 bg-maroon-900 text-gold-400 font-bold text-xs px-3 py-1.5 rounded-full border border-gold-500/40 shadow-md">
+                            Corporate Galas
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="font-serif text-xl font-extrabold text-maroon-900 group-hover:text-gold-600 transition">Corporate & Business Events</h3>
+                        <p class="text-slate-600 text-sm mt-2 leading-relaxed">Executive lunch buffets, packed gourmet lunch boxes, high-tea stalls, and corporate celebration menus.</p>
+                    </div>
+                </div>
+
+                <!-- Service 3 -->
+                <div class="bg-slate-50 rounded-2xl overflow-hidden border border-slate-200 shadow-md hover:shadow-2xl transition duration-300 group">
+                    <div class="h-52 overflow-hidden relative">
+                        <img src="https://images.unsplash.com/photo-1530103862676-de8c9debad1d?q=80&w=800&auto=format&fit=crop" 
+                             alt="Birthday Parties" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+                        <div class="absolute top-4 right-4 bg-maroon-900 text-gold-400 font-bold text-xs px-3 py-1.5 rounded-full border border-gold-500/40 shadow-md">
+                            From 20+ Members
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="font-serif text-xl font-extrabold text-maroon-900 group-hover:text-gold-600 transition">Birthdays & Private Parties</h3>
+                        <p class="text-slate-600 text-sm mt-2 leading-relaxed">Vibrant food stalls, interactive live counters, kid-friendly snack boxes, and customizable menus.</p>
+                    </div>
+                </div>
+
+                <!-- Service 4 -->
+                <div class="bg-slate-50 rounded-2xl overflow-hidden border border-slate-200 shadow-md hover:shadow-2xl transition duration-300 group">
+                    <div class="h-52 overflow-hidden relative">
+                        <img src="https://images.unsplash.com/photo-1528605248644-14dd04022da1?q=80&w=800&auto=format&fit=crop" 
+                             alt="Gruhapravesam Traditional Catering" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="font-serif text-xl font-extrabold text-maroon-900 group-hover:text-gold-600 transition">Gruhapravesam & Religious Poojas</h3>
+                        <p class="text-slate-600 text-sm mt-2 leading-relaxed">100% Traditional Satvik Pure Vegetarian meals prepared with utmost piety and traditional hygiene standards.</p>
+                    </div>
+                </div>
+
+                <!-- Service 5 -->
+                <div class="bg-slate-50 rounded-2xl overflow-hidden border border-slate-200 shadow-md hover:shadow-2xl transition duration-300 group">
+                    <div class="h-52 overflow-hidden relative">
+                        <img src="https://images.unsplash.com/photo-1555244162-803834f70033?q=80&w=800&auto=format&fit=crop" 
+                             alt="Live Food Stalls" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="font-serif text-xl font-extrabold text-maroon-900 group-hover:text-gold-600 transition">Live Interactive Food Counters</h3>
+                        <p class="text-slate-600 text-sm mt-2 leading-relaxed">Live Dosa, Pasta, Indo-Chinese, Pani Puri, Tandoori Kebabs, and fresh Mocktail bar setups.</p>
+                    </div>
+                </div>
+
+                <!-- Service 6 -->
+                <div class="bg-slate-50 rounded-2xl overflow-hidden border border-slate-200 shadow-md hover:shadow-2xl transition duration-300 group">
+                    <div class="h-52 overflow-hidden relative">
+                        <img src="https://images.unsplash.com/photo-1464366400600-7168b8af9bc3?q=80&w=800&auto=format&fit=crop" 
+                             alt="Sangeet and Engagement" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="font-serif text-xl font-extrabold text-maroon-900 group-hover:text-gold-600 transition">Sangeet, Engagement & Outdoor</h3>
+                        <p class="text-slate-600 text-sm mt-2 leading-relaxed">Stylish finger foods, theme-based presentation, outdoor BBQ stations, and mocktail lounges.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Tabbed Menu Showcase -->
+    <section id="menus" class="py-20 bg-slate-950 text-white relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            
+            <div class="text-center max-w-3xl mx-auto mb-12">
+                <span class="text-gold-400 font-bold uppercase text-xs sm:text-sm tracking-widest">Signature Flavors</span>
+                <h2 class="font-serif text-3xl sm:text-5xl font-black mt-2">Sri Sai Special Catering Menus</h2>
+                <p class="text-slate-300 mt-2 text-base">Perfected over 25 years in Hasthinapuram, Hyderabad.</p>
+            </div>
+
+            <!-- Tab Switcher -->
+            <div class="flex flex-wrap justify-center gap-3 mb-10">
+                <button onclick="switchMenuTab('veg')" id="tab-veg" class="menu-tab-btn active border-2 border-gold-500 bg-gold-500 text-maroon-950 font-extrabold px-6 py-3.5 rounded-xl transition text-sm sm:text-base shadow-lg">
+                    <i class="fa-solid fa-seedling mr-2"></i> Pure Veg Feasts
+                </button>
+                <button onclick="switchMenuTab('nonveg')" id="tab-nonveg" class="menu-tab-btn border-2 border-gold-500/40 bg-maroon-950/80 text-slate-300 font-extrabold px-6 py-3.5 rounded-xl hover:border-gold-500 transition text-sm sm:text-base">
+                    <i class="fa-solid fa-drumstick-bite mr-2"></i> Gourmet Non-Veg Specials
+                </button>
+                <button onclick="switchMenuTab('live')" id="tab-live" class="menu-tab-btn border-2 border-gold-500/40 bg-maroon-950/80 text-slate-300 font-extrabold px-6 py-3.5 rounded-xl hover:border-gold-500 transition text-sm sm:text-base">
+                    <i class="fa-solid fa-fire-burner mr-2"></i> Live Stalls & Sweets
+                </button>
+            </div>
+
+            <!-- Menu Cards Wrapper -->
+            <div class="glass-card-dark p-6 sm:p-10 rounded-3xl border border-gold-500/40">
+                
+                <!-- Pure Veg Panel -->
+                <div id="panel-veg" class="menu-panel space-y-8">
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                        <div class="bg-white/5 p-6 rounded-2xl border border-white/10">
+                            <h4 class="font-serif text-gold-400 text-lg font-bold mb-3 border-b border-gold-500/30 pb-2">Starters & Drinks</h4>
+                            <ul class="text-sm text-slate-300 space-y-2.5">
+                                <li>• Badam Milk / Welcome Punch</li>
+                                <li>• Paneer 65 & Crispy Veg Manchurian</li>
+                                <li>• Baby Corn Pepper Fry</li>
+                                <li>• Hara Bhara Kebab</li>
+                            </ul>
+                        </div>
+                        <div class="bg-white/5 p-6 rounded-2xl border border-white/10">
+                            <h4 class="font-serif text-gold-400 text-lg font-bold mb-3 border-b border-gold-500/30 pb-2">Rotis & Main Biryani</h4>
+                            <ul class="text-sm text-slate-300 space-y-2.5">
+                                <li>• Butter Naan / Rumali Roti</li>
+                                <li>• Paneer Butter Masala / Kaju Curry</li>
+                                <li>• <strong class="text-gold-300">Hyderabadi Veg Dum Biryani</strong></li>
+                                <li>• Mirchi Ka Salan & Raitha</li>
+                                <li>• Bagara Rice & Dal Tadka</li>
+                            </ul>
+                        </div>
+                        <div class="bg-white/5 p-6 rounded-2xl border border-white/10">
+                            <h4 class="font-serif text-gold-400 text-lg font-bold mb-3 border-b border-gold-500/30 pb-2">South Indian Feast</h4>
+                            <ul class="text-sm text-slate-300 space-y-2.5">
+                                <li>• Steamed Rice & Special Sambar</li>
+                                <li>• Gutti Vankaya Curry</li>
+                                <li>• Tomato Pappu & Ulvacharu</li>
+                                <li>• Fresh Curd Rice & Homemade Pickles</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Non-Veg Panel -->
+                <div id="panel-nonveg" class="menu-panel hidden space-y-8">
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                        <div class="bg-white/5 p-6 rounded-2xl border border-white/10">
+                            <h4 class="font-serif text-gold-400 text-lg font-bold mb-3 border-b border-gold-500/30 pb-2">Non-Veg Starters</h4>
+                            <ul class="text-sm text-slate-300 space-y-2.5">
+                                <li>• Authentic Hyderabadi Chicken 65</li>
+                                <li>• Mutton Pepper Fry</li>
+                                <li>• Apollo Fish Fry</li>
+                                <li>• Tandoori Tangdi Kebab</li>
+                            </ul>
+                        </div>
+                        <div class="bg-white/5 p-6 rounded-2xl border border-white/10">
+                            <h4 class="font-serif text-gold-400 text-lg font-bold mb-3 border-b border-gold-500/30 pb-2">25-Yr Masterpiece Biryanis</h4>
+                            <ul class="text-sm text-slate-300 space-y-2.5">
+                                <li>• <strong class="text-gold-300 text-base">Hyderabadi Chicken Dum Biryani</strong></li>
+                                <li>• Royal Mutton Dum Biryani</li>
+                                <li>• Butter Chicken & Tandoori Roti</li>
+                                <li>• Telangana Mutton Curry / Fish Pulusu</li>
+                            </ul>
+                        </div>
+                        <div class="bg-white/5 p-6 rounded-2xl border border-white/10">
+                            <h4 class="font-serif text-gold-400 text-lg font-bold mb-3 border-b border-gold-500/30 pb-2">Accompaniments & Sweets</h4>
+                            <ul class="text-sm text-slate-300 space-y-2.5">
+                                <li>• Mirchi Ka Salan & Onion Raitha</li>
+                                <li>• Double Ka Meetha / Kaddu Ka Kheer</li>
+                                <li>• Hot Gulab Jamun with Ice Cream</li>
+                                <li>• Royal Paan Stall</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Live Stalls Panel -->
+                <div id="panel-live" class="menu-panel hidden space-y-8">
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                        <div class="bg-white/5 p-6 rounded-2xl border border-white/10">
+                            <h4 class="font-serif text-gold-400 text-lg font-bold mb-3 border-b border-gold-500/30 pb-2">Live South Indian Counter</h4>
+                            <ul class="text-sm text-slate-300 space-y-2.5">
+                                <li>• Live Dosa Station (7 Varieties)</li>
+                                <li>• Mini Idli with Allam Chutney</li>
+                                <li>• Hot Mysuru Bonda & Wada</li>
+                            </ul>
+                        </div>
+                        <div class="bg-white/5 p-6 rounded-2xl border border-white/10">
+                            <h4 class="font-serif text-gold-400 text-lg font-bold mb-3 border-b border-gold-500/30 pb-2">Live Chaat & Indo-Chinese</h4>
+                            <ul class="text-sm text-slate-300 space-y-2.5">
+                                <li>• Pani Puri & Sev Puri Stall</li>
+                                <li>• Hot Pav Bhaji Counter</li>
+                                <li>• Live Noodle & Manchurian Wok</li>
+                            </ul>
+                        </div>
+                        <div class="bg-white/5 p-6 rounded-2xl border border-white/10">
+                            <h4 class="font-serif text-gold-400 text-lg font-bold mb-3 border-b border-gold-500/30 pb-2">Desserts & Mocktails</h4>
+                            <ul class="text-sm text-slate-300 space-y-2.5">
+                                <li>• Live Hot Jalebi & Rabri</li>
+                                <li>• Ice Cream Parlor with Sprinkles</li>
+                                <li>• Fresh Fruit Counter</li>
+                                <li>• Mocktail Lounge (Virgin Mojito, Blue Lagoon)</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Cost Calculator Section -->
+    <section id="calculator" class="py-20 bg-gradient-to-b from-cream to-slate-100">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <div class="text-center max-w-2xl mx-auto mb-10">
+                <span class="text-gold-600 font-bold uppercase text-xs sm:text-sm tracking-widest">Instant Booking Quote</span>
+                <h2 class="font-serif text-3xl sm:text-5xl font-black text-maroon-950 mt-1">Catering Cost Calculator</h2>
+                <p class="text-slate-600 text-sm sm:text-base mt-2">Get an instant price range estimation for 20 to 10,000+ guests.</p>
+            </div>
+
+            <div class="bg-white rounded-3xl shadow-2xl border-2 border-gold-500/30 p-6 sm:p-10">
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-8">
+                    
+                    <!-- Controls Column -->
+                    <div class="lg:col-span-7 space-y-6">
+                        
+                        <!-- Guest Range Slider -->
+                        <div>
+                            <div class="flex justify-between items-center mb-2">
+                                <label class="text-sm font-extrabold text-maroon-950 uppercase tracking-wide">Number of Guests:</label>
+                                <span class="text-3xl font-black text-gold-600 font-serif" id="guest-count-val">250</span>
+                            </div>
+                            <input type="range" id="guest-range" min="20" max="10000" step="10" value="250" class="w-full h-3.5 bg-slate-200 rounded-lg appearance-none cursor-pointer accent-gold-500">
+                            <div class="flex justify-between text-xs text-slate-600 font-semibold mt-1.5">
+                                <span>20 Min</span>
+                                <span>1,000</span>
+                                <span>5,000</span>
+                                <span>10,000+ Max</span>
+                            </div>
+                        </div>
+
+                        <!-- Event Selection -->
+                        <div>
+                            <label class="block text-sm font-extrabold text-maroon-950 uppercase tracking-wide mb-2">Event Type:</label>
+                            <select id="event-type" class="w-full bg-slate-50 border border-slate-300 text-slate-800 rounded-xl p-3.5 focus:ring-2 focus:ring-gold-500 outline-none font-bold">
+                                <option value="marriage">Marriage / Grand Wedding Reception</option>
+                                <option value="birthday">Birthday Party / Anniversary</option>
+                                <option value="gruhapravesam">Housewarming (Gruhapravesam)</option>
+                                <option value="corporate">Corporate Gala / Business Lunch</option>
+                                <option value="sangeet">Sangeet / Engagement / Haldi Ceremony</option>
+                            </select>
+                        </div>
+
+                        <!-- Food Selection Buttons -->
+                        <div>
+                            <label class="block text-sm font-extrabold text-maroon-950 uppercase tracking-wide mb-2">Food Menu Type:</label>
+                            <div class="grid grid-cols-3 gap-3">
+                                <button type="button" onclick="setFoodPref('veg')" id="btn-veg" class="food-pref-btn active bg-maroon-950 text-gold-400 border-2 border-gold-500 py-3 rounded-xl font-bold text-xs sm:text-sm text-center shadow-md">
+                                    Pure Veg
+                                </button>
+                                <button type="button" onclick="setFoodPref('nonveg')" id="btn-nonveg" class="food-pref-btn bg-slate-100 text-slate-700 border-2 border-transparent py-3 rounded-xl font-bold text-xs sm:text-sm text-center hover:bg-slate-200">
+                                    Veg + Non-Veg
+                                </button>
+                                <button type="button" onclick="setFoodPref('premium')" id="btn-premium" class="food-pref-btn bg-slate-100 text-slate-700 border-2 border-transparent py-3 rounded-xl font-bold text-xs sm:text-sm text-center hover:bg-slate-200">
+                                    Royal VIP Feast
+                                </button>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <!-- Output Summary Box -->
+                    <div class="lg:col-span-5 maroon-gradient text-white rounded-2xl p-6 flex flex-col justify-between border-2 border-gold-500/40 shadow-xl">
+                        <div>
+                            <div class="flex items-center justify-between border-b border-gold-500/30 pb-3">
+                                <span class="text-xs font-black uppercase tracking-widest text-gold-400">Estimated Quote</span>
+                                <span class="bg-gold-500/20 text-gold-300 text-[10px] font-bold px-2 py-0.5 rounded-full border border-gold-500/30">25 Yr Guarantee</span>
+                            </div>
+
+                            <div class="mt-4">
+                                <span class="text-3xl sm:text-4xl font-black font-serif text-gold-400 gold-glow" id="estimated-price">₹250 - ₹350</span>
+                                <span class="text-xs text-slate-300 block mt-1">/ plate (Approx. Subject to menu customization)</span>
+                            </div>
+
+                            <div class="space-y-2.5 text-xs text-slate-300 mt-6 bg-white/5 p-3.5 rounded-xl border border-white/10">
+                                <div class="flex justify-between">
+                                    <span>Guests Count:</span>
+                                    <strong class="text-white" id="summary-guests">250 Members</strong>
+                                </div>
+                                <div class="flex justify-between">
+                                    <span>Selected Category:</span>
+                                    <strong class="text-white" id="summary-menu">Pure Veg Feast</strong>
+                                </div>
+                                <div class="flex justify-between">
+                                    <span>Buffet Counter Setup:</span>
+                                    <strong class="text-gold-400">Included Free</strong>
+                                </div>
+                                <div class="flex justify-between">
+                                    <span>Professional Staff:</span>
+                                    <strong class="text-gold-400">Included Free</strong>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="mt-6">
+                            <button onclick="sendWhatsAppInquiry()" class="w-full gold-bg-gradient text-maroon-950 font-black py-4 px-4 rounded-xl text-sm transition shadow-lg hover:opacity-95 flex items-center justify-center gap-2 transform hover:-translate-y-0.5">
+                                <i class="fa-brands fa-whatsapp text-xl"></i>
+                                <span>Lock Best Price with S. Ravinder</span>
+                            </button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact & Direct Booking Section -->
+    <section id="contact" class="py-20 bg-maroon-950 text-white relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
+                
+                <!-- Contact Details -->
+                <div class="lg:col-span-5 space-y-8">
+                    <div>
+                        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-gold-500/10 border border-gold-500/30 text-gold-400 text-xs font-bold uppercase tracking-wider mb-2">
+                            <i class="fa-solid fa-headset"></i>
+                            <span>Direct Contact & Booking</span>
+                        </div>
+                        <h2 class="font-serif text-3xl sm:text-5xl font-black mt-1">Get In Touch With Sri Sai Caterers</h2>
+                        <p class="text-slate-300 text-sm sm:text-base mt-3 leading-relaxed">
+                            Serving Hasthinapuram and across all Hyderabad regions for over 25 years. Speak directly with founder S. Ravinder for food tasting and custom menu quotes.
+                        </p>
+                    </div>
+
+                    <div class="space-y-6 text-sm">
+                        <div class="flex items-start gap-4">
+                            <div class="w-12 h-12 rounded-xl bg-gold-500/20 border border-gold-400 flex items-center justify-center text-gold-400 text-xl flex-shrink-0">
+                                <i class="fa-solid fa-location-dot"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-extrabold text-white text-base">Office & Kitchen Address</h4>
+                                <p class="text-slate-300 mt-0.5">Hasthinapuram, Nagarjuna Sagar Main Road, Hyderabad, Telangana - 500070</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start gap-4">
+                            <div class="w-12 h-12 rounded-xl bg-gold-500/20 border border-gold-400 flex items-center justify-center text-gold-400 text-xl flex-shrink-0">
+                                <i class="fa-solid fa-phone"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-extrabold text-white text-base">Direct Phone Numbers</h4>
+                                <p class="text-slate-300 mt-0.5">+91 98765 43210 / +91 91234 56789</p>
+                                <p class="text-xs text-gold-400 font-bold mt-1">Founder: S. Ravinder</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start gap-4">
+                            <div class="w-12 h-12 rounded-xl bg-gold-500/20 border border-gold-400 flex items-center justify-center text-gold-400 text-xl flex-shrink-0">
+                                <i class="fa-solid fa-envelope"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-extrabold text-white text-base">Email Contact</h4>
+                                <p class="text-slate-300 mt-0.5">srisaicasters.hyd@gmail.com</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="pt-2">
+                        <a href="https://wa.me/919876543210?text=Hi%20S.%20Ravinder%20Garu,%20I%20want%20to%20inquire%20about%20catering%20services." target="_blank" class="inline-flex items-center gap-3 bg-green-600 hover:bg-green-500 text-white font-extrabold px-6 py-4 rounded-xl transition shadow-xl text-sm">
+                            <i class="fa-brands fa-whatsapp text-2xl"></i>
+                            <span>Chat Directly with S. Ravinder</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Inquiry Form -->
+                <div class="lg:col-span-7">
+                    <div class="bg-white/5 border-2 border-gold-500/30 rounded-3xl p-6 sm:p-10 backdrop-blur-md">
+                        <h3 class="font-serif text-2xl sm:text-3xl font-extrabold text-white mb-6">Send Booking Request</h3>
+                        
+                        <form id="inquiryForm" onsubmit="handleFormSubmit(event)" class="space-y-4">
+                            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                                <div>
+                                    <label class="block text-xs font-bold text-slate-300 uppercase mb-1">Your Full Name *</label>
+                                    <input type="text" required class="w-full bg-slate-900 border border-slate-700 text-white rounded-xl p-3.5 text-sm focus:border-gold-500 focus:outline-none" placeholder="e.g. Ramesh Reddy">
+                                </div>
+                                <div>
+                                    <label class="block text-xs font-bold text-slate-300 uppercase mb-1">Mobile Number *</label>
+                                    <input type="tel" required class="w-full bg-slate-900 border border-slate-700 text-white rounded-xl p-3.5 text-sm focus:border-gold-500 focus:outline-none" placeholder="+91 98765 43210">
+                                </div>
+                            </div>
+
+                            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                                <div>
+                                    <label class="block text-xs font-bold text-slate-300 uppercase mb-1">Guest Count (20 to 10,000+) *</label>
+                                    <input type="number" min="20" max="10000" required class="w-full bg-slate-900 border border-slate-700 text-white rounded-xl p-3.5 text-sm focus:border-gold-500 focus:outline-none" placeholder="e.g. 500">
+                                </div>
+                                <div>
+                                    <label class="block text-xs font-bold text-slate-300 uppercase mb-1">Event Date</label>
+                                    <input type="date" class="w-full bg-slate-900 border border-slate-700 text-white rounded-xl p-3.5 text-sm focus:border-gold-500 focus:outline-none">
+                                </div>
+                            </div>
+
+                            <div>
+                                <label class="block text-xs font-bold text-slate-300 uppercase mb-1">Food Menu Choice</label>
+                                <select class="w-full bg-slate-900 border border-slate-700 text-white rounded-xl p-3.5 text-sm focus:border-gold-500 focus:outline-none">
+                                    <option>Pure Vegetarian Feast</option>
+                                    <option>Non-Vegetarian Special Menu</option>
+                                    <option>Both Veg & Non-Veg Counters</option>
+                                </select>
+                            </div>
+
+                            <div>
+                                <label class="block text-xs font-bold text-slate-300 uppercase mb-1">Event Details & Specific Menu Requests</label>
+                                <textarea rows="3" class="w-full bg-slate-900 border border-slate-700 text-white rounded-xl p-3.5 text-sm focus:border-gold-500 focus:outline-none" placeholder="Tell us about the venue, live stall preferences, special dishes..."></textarea>
+                            </div>
+
+                            <button type="submit" class="w-full gold-bg-gradient text-maroon-950 font-black py-4 rounded-xl text-base hover:opacity-95 transition shadow-xl mt-2">
+                                Submit Inquiry to Sri Sai Caterers
+                            </button>
+                        </form>
+
+                        <div id="formSuccessMessage" class="hidden mt-4 p-4 bg-green-900/90 border border-green-500 text-green-200 rounded-xl text-sm text-center font-bold">
+                            <i class="fa-solid fa-circle-check text-lg mr-2 text-green-400"></i>
+                            Thank you! Your inquiry has been sent to S. Ravinder. We will contact you immediately!
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-maroon-900 text-slate-400 py-10 border-t-2 border-gold-500/30 text-xs">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center justify-between gap-4 text-center md:text-left">
+            <div>
+                <span class="font-serif text-xl font-black text-white block gold-glow">SRI SAI CATERERS & EVENTS</span>
+                <p class="text-slate-300 mt-1">Hasthinapuram, Hyderabad • Serving Excellence Since 25+ Years • Founded by S. Ravinder</p>
+            </div>
+            <div class="text-slate-400 font-semibold">
+                &copy; <span id="year"></span> Sri Sai Caterers & Events. All Rights Reserved.
+            </div>
+        </div>
+    </footer>
+
+    <!-- Application JavaScript Logic -->
+    <script>
+        // Set dynamic copyright year
+        document.getElementById('year').textContent = new Date().getFullYear();
+
+        // Mobile Menu Drawer Toggle
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const menuIcon = document.getElementById('menu-icon');
+
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+            if (mobileMenu.classList.contains('hidden')) {
+                menuIcon.classList.remove('fa-xmark');
+                menuIcon.classList.add('fa-bars');
+            } else {
+                menuIcon.classList.remove('fa-bars');
+                menuIcon.classList.add('fa-xmark');
+            }
+        });
+
+        document.querySelectorAll('.mobile-nav-link').forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+                menuIcon.classList.remove('fa-xmark');
+                menuIcon.classList.add('fa-bars');
+            });
+        });
+
+        // Tabbed Menu Switcher Logic
+        function switchMenuTab(tabKey) {
+            document.querySelectorAll('.menu-tab-btn').forEach(btn => {
+                btn.classList.remove('active', 'bg-gold-500', 'text-maroon-950');
+                btn.classList.add('bg-maroon-950/80', 'text-slate-300');
+            });
+
+            document.querySelectorAll('.menu-panel').forEach(panel => {
+                panel.classList.add('hidden');
+            });
+
+            const activeBtn = document.getElementById(`tab-${tabKey}`);
+            activeBtn.classList.add('active', 'bg-gold-500', 'text-maroon-950');
+            activeBtn.classList.remove('bg-maroon-950/80', 'text-slate-300');
+
+            document.getElementById(`panel-${tabKey}`).classList.remove('hidden');
+        }
+
+        // Guest Capacity & Budget Range Calculator
+        const guestRange = document.getElementById('guest-range');
+        const guestCountVal = document.getElementById('guest-count-val');
+        const estimatedPrice = document.getElementById('estimated-price');
+        const summaryGuests = document.getElementById('summary-guests');
+        const summaryMenu = document.getElementById('summary-menu');
+
+        let currentFoodPref = 'veg';
+
+        function setFoodPref(pref) {
+            currentFoodPref = pref;
+            document.querySelectorAll('.food-pref-btn').forEach(btn => {
+                btn.classList.remove('active', 'bg-maroon-950', 'text-gold-400', 'border-gold-500');
+                btn.classList.add('bg-slate-100', 'text-slate-700', 'border-transparent');
+            });
+
+            const activeBtn = document.getElementById(`btn-${pref}`);
+            activeBtn.classList.add('active', 'bg-maroon-950', 'text-gold-400', 'border-gold-500');
+            activeBtn.classList.remove('bg-slate-100', 'text-slate-700', 'border-transparent');
+
+            calculateEstimate();
+        }
+
+        function calculateEstimate() {
+            const count = parseInt(guestRange.value);
+            guestCountVal.textContent = count.toLocaleString('en-IN');
+            summaryGuests.textContent = `${count.toLocaleString('en-IN')} Members`;
+
+            let priceRange = "";
+            let categoryName = "";
+
+            if (currentFoodPref === 'veg') {
+                categoryName = "Pure Veg Feast";
+                if (count < 100) {
+                    priceRange = "₹300 - ₹400";
+                } else if (count <= 500) {
+                    priceRange = "₹250 - ₹350";
+                } else {
+                    priceRange = "₹220 - ₹300";
+                }
+            } else if (currentFoodPref === 'nonveg') {
+                categoryName = "Veg + Special Non-Veg";
+                if (count < 100) {
+                    priceRange = "₹450 - ₹600";
+                } else if (count <= 500) {
+                    priceRange = "₹400 - ₹520";
+                } else {
+                    priceRange = "₹360 - ₹480";
+                }
+            } else {
+                categoryName = "Royal VIP Feast (Veg & Non-Veg)";
+                if (count < 100) {
+                    priceRange = "₹700 - ₹950";
+                } else if (count <= 500) {
+                    priceRange = "₹650 - ₹850";
+                } else {
+                    priceRange = "₹600 - ₹780";
+                }
+            }
+
+            summaryMenu.textContent = categoryName;
+            estimatedPrice.textContent = priceRange;
+        }
+
+        guestRange.addEventListener('input', calculateEstimate);
+
+        // Send Inquiry details via WhatsApp
+        function sendWhatsAppInquiry() {
+            const guests = guestRange.value;
+            const eventType = document.getElementById('event-type').selectedOptions[0].text;
+            const price = estimatedPrice.textContent;
+            
+            const text = `Hello Sri Sai Caterers (S. Ravinder Garu), I calculated an estimate on your website:%0A- Guests: ${guests}%0A- Event: ${eventType}%0A- Menu: ${summaryMenu.textContent}%0A- Estimated Range: ${price}/plate.%0APlease share details and availability for booking.`;
+            
+            window.open(`https://wa.me/919876543210?text=${text}`, '_blank');
+        }
+
+        // Form Submit Handler
+        function handleFormSubmit(event) {
+            event.preventDefault();
+            const successMsg = document.getElementById('formSuccessMessage');
+            successMsg.classList.remove('hidden');
+            document.getElementById('inquiryForm').reset();
+            
+            setTimeout(() => {
+                successMsg.classList.add('hidden');
+            }, 6000);
+        }
+
+        // Initial Run
+        calculateEstimate();
+    </script>
+</body>
+</html>
